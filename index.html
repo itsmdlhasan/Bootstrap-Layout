@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Layout</title>
+    <!-- Bootstrap styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- container fixed-width layout -->
+    <div class="container bg-success text-white">
+        <h1>I have fixed with container layout</h1>
+        <p>So, max-width size of mine will change on different screen size as below:</p>
+        <ol>
+            <li>XXL(>/=1400px) = 1320px</li>
+            <li>XL(>/=1200px) = 1140px</li>
+            <li>LG(>/=992px) = 960px</li>
+            <li>MD(>/=768px) = 720px</li>
+            <li>SM(>/=576px) = 540px</li>
+            <li>XSM(less than 576px) = 100%</li>
+        </ol>
+    </div>
+
+
+    <!-- container fluid-width layout -->
+    <div class="container-fluid bg-primary text-white">
+        <h1>I have fluid with container layout</h1>
+        <p>So, I will take the full width of viewport</p>
+    </div>
+
+
+    <!-- container fixed-width layout with padding -->
+    <div class="container bg-success text-white p-5">
+        <h1>I have fixed with container layout with padding</h1>
+        <p>I have a padding of 5, where 0=0, 1=.25rem, 2=0.5rem, 3=1rem, 4=1.5rem, 5=3rem
+            and 1rem means 16px of the body root by default if not changed.</p>
+    </div>
+
+
+    <!-- container fluid-width layout with padding -->
+    <div class="container-fluid bg-info text-white p-5">
+        <h1>I have fluid with container layout with padding</h1>
+        <p>I have a padding of 5, where 0=0, 1=.25rem, 2=0.5rem, 3=1rem, 4=1.5rem, 5=3rem
+            and 1rem means 16px of the body root by default if not changed.</p>
+    </div>
+
+
+    <!-- container fixed-width layout with breakpoint -->
+    <div class="container-lg bg-success text-white p-5">
+        <h1>I have fixed with container layout with lg(992px) breakpoint</h1>
+        <p>When the screen reaches less than lg(992px), my max-width screen change to 100%, not limit to 720px as before
+        </p>
+        <p>Reversely, I can also say that, upto 991px, my max-width screen size will be 100%, but then it will be 960px
+            or increase above by default rule</p>
+    </div>
+
+
+    <!-- container fixed-width layout with breakpoint -->
+    <div class="container-md bg-dark-subtle text-white p-5 mb-5">
+        <h1>I have fixed with container layout with md(768px) breakpoint with bottom margin</h1>
+        <p>When the screen reaches less than md(768px), my max-width screen change to 100%, not limit to 540px as before
+        </p>
+        <p>Reversely, I can say that, upto 767px, my max-width screen size will be 100%, but then it will be 720px or
+            increase above by default rule</p>
+    </div>
+
+
+
+
+
+
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
